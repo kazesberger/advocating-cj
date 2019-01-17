@@ -78,6 +78,17 @@
                    "ML / NLP / Data Science"
                    "Game development on various platforms (eg. Unity3D or again of course anything JS)"
                    "Scripting"])]
+
+   [:section
+    [:h2 "interop"]
+    [:h4 [:a {:href "https://clojure.org/reference/java_interop"} "CLJ &lt;-&gt; JAVA"]]
+    [:h4 [:a {:href "https://clojurescript.org/guides/faq-js"} "CLJs &lt;-&gt; JS"]]
+    (bulletpoints [[:a {:href "https://stackoverflow.com/questions/31641030/call-clojurescript-from-javascript"} "simple JS->CLJS example"]
+                   [:a {:href "https://stackoverflow.com/questions/26935101/clojurescript-interoperability-with-javascript"} "integration with legacy code"]
+                   [:a {:href "http://shadow-cljs.org/"} "http://shadow-cljs.org/"]])]
+
+
+
    [:section
     [:section
      [:h2 "General purpose lang alts"]]
