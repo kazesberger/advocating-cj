@@ -47,7 +47,7 @@
      [:h2 "interactive programming?"]
 
     ;; FIXME code format
-     [:p {:class "fragment"}
+     [:pre {:class "fragment"}
         "(def counter (atom 0))\n\n(defn template [count]\n  [:div\n   [:h1 \"Counter: \" count]\n   [:p [:a { :href \"#\"\n             :onClick (fn [e]\n                        (.preventDefault e)\n                        (swap! counter inc))} \"increment\"]]])\n\n(defn render [comp]\n  (.renderComponent js/React\n                    (sablono/html comp)\n                    (.getElementById js/document \"main-area\")))\n\n(add-watch counter :renderer\n           (fn [_ _ _ n]\n             (render (template n))))\n\n;; ping the state to trigger the first render\n(reset! counter @counter)\n"]]
 
    [:section
